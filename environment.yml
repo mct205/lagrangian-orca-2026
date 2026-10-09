@@ -1,0 +1,27 @@
+name: lagrangian-school
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  # core numerics / I/O
+  - numpy
+  - scipy
+  - pandas
+  - xarray
+  - netcdf4
+  - dask
+  - zarr
+  # plotting
+  - matplotlib>=3.6
+  - contourpy
+  - cartopy            # optional in the notebooks (plain-axes fallback)
+  # tides
+  - utide              # optional (DETIDE="utide")
+  # particle tracking backend no. 2 (backend no. 1 is the RK4 in lagkit.py)
+  - parcels>=4.0
+  # notebooks / tests
+  - jupyterlab
+  - ipykernel
+  - nbformat
+  - nbclient
+  - pytest

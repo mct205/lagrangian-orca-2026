@@ -1,0 +1,21 @@
+# pip equivalent of environment.yml (conda is preferred: cartopy and netCDF4
+# need GEOS/PROJ/HDF5, which conda-forge ships prebuilt).
+#   python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+# Requires Python >= 3.11. Lower bounds are the versions the material was tested with.
+numpy>=2.0
+scipy>=1.14
+pandas>=2.2
+xarray>=2025.1
+netCDF4>=1.7
+dask>=2025.1
+zarr>=3.0
+matplotlib>=3.9
+contourpy>=1.3
+cartopy>=0.24          # optional: coastlines in notebook 2
+utide>=0.3.1           # optional: DETIDE="utide"
+parcels>=4.0           # second particle-tracking backend (lagkit.advect_parcels)
+jupyterlab>=4.2
+ipykernel>=6.29
+nbformat>=5.10
+nbclient>=0.10
+pytest>=8.0

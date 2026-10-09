@@ -1,0 +1,29 @@
+# --- not part of the course material ---
+# working documents
+PLAN.md
+lagrangian_notebooks_spec.md
+# exploratory tests (radar vs model, Ibiza), their figures and logs
+hfr_tests/
+
+# --- data that stay local ---
+# SOCIB Ibiza Channel radar and WMOP model
+data/ibiza/
+# model fields regridded for the tests, and the 34 GB model file (symlink to an external disk)
+data/got_model_*.nc
+data/GOT_REF_uv_2015_hourly_all.nc
+# full-year radar file, 227 MB (above GitHub's 100 MB limit); January is in hfr-got-2015-01.nc
+data/hfr-got-2015.nc
+# coastline cache used only by hfr_tests
+data/coast_got_wide_f.npz
+
+# --- Python / Jupyter ---
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+
+# --- editors, OS, local tooling ---
+.vscode/
+.idea/
+.DS_Store
+.claude/
